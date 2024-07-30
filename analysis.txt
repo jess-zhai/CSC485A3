@@ -1,0 +1,60 @@
+% Student name: Xueqing Zhai
+% Student number: 1006962413
+% UTORid: zhaixueq
+
+% This code is provided solely for the personal and private use of students
+% taking the CSC485H/2501H course at the University of Toronto. Copying for
+% purposes other than this use is expressly prohibited. All forms of
+% distribution of this code, including but not limited to public repositories on
+% GitHub, GitLab, Bitbucket, or any other online platform, whether as given or
+% with any changes, are expressly prohibited.
+
+% Authors: Ken Shi, Jingcheng Niu and Gerald Penn
+
+% All of the files in this directory and all subdirectories are:
+% Copyright (c) 2023 University of Toronto
+
+2(a)
+28:
+exists(p), programmer(p)^ forall(l)(language(l) => speak(p, l))
+forall(l), (language(l) => exists(p) programmer(p) ^ speak(p, l))
+30:
+exists(p), programmer(p)^ forall(l)(language(l) => speak(p, l))
+
+
+2(e)
+I asked ChatGPT to translate some sentences. I'll list my results and compare with ChatGPT's answers. 
+1. "Mei Zhong yuyan mei ge chengxuyuan dou huishuo"
+my results: 
+Every language every programmer speaks. 
+Every  programmer speaks every language.
+
+ChatGPT's answer:
+Every  programmer speaks every language.
+
+2. "yi ge chengxuyuan huishuo mei zhong yuyan"
+my results:
+Every language a programmer speaks.
+A programmer speaks every language. 
+
+ChatGPT:
+A programmer can speak every kind of language. 
+
+3. "Mei ge chengxuyuan dou huishuo yi zhong yuyan"
+my results:
+a language every programmer speaks.
+every programmer speaks a language.
+
+ChatGPT:
+Every programmer speaks one language. 
+
+4. A programmer speaks every language.
+my results:
+yi ge chengxuyuan huishuo mei zhong yuyan.
+
+ChatGPT:
+yi ge chengxuyuan huishuo suoyou yuyan.
+
+
+From comparison of results, we can see that ChatGPT gives similar results to my implementation, but it uses words that is closer to real world speaking behaviours. For example, it translates "yi ge" to "a" or "one" based on context; "mei zhong" to "suoyou" which means "all" and is more natural; add "kind of" after "every" as it's usually what we speak as human. It could identify object topicalization. I asked it "do you think the sentence 'yizhong yuyan yi ge chengxuyuan huishou' is valid?", and it answered that although grammatically unusual, this sentence could still be understood, and suggests that a better sentence (with same order of "language" and "programmer") would be "you yizhong yuyan shi meige chengxuyuan dou huishuo de", which translates to "there is a type of language that every one programmer can speak". As a Chinese native speaker, I could say that this sentence is indeed better and more natural. 
+
